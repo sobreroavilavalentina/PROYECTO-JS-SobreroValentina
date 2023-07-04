@@ -38,7 +38,7 @@ const pedirBebida = () => {
   bebida = prompt('Ingresa el número del tipo de bebida que desea: \n 1. Café \n 2. Cortado \n 3. Té de hierbas \n 4. Té de rosas')
   bebidaSelecc = opcionesBebida[bebida]
 
-  endulzante = prompt('Seleccione el tipo de endulzante que prefiera: \n 1. Azúcar \n 2. Edulcorante \n 3. Sin endulzante')
+  endulzante = prompt('Ingrese el número del tipo de endulzante que prefiera: \n 1. Azúcar \n 2. Edulcorante \n 3. Sin endulzante')
   endulSelecc = opcionesEndul[endulzante]
 
   if (endulzante == 1) {
@@ -52,7 +52,7 @@ const pedirBebida = () => {
   }
 
   do {
-    extra = prompt(`¿Desea añadir a su ${bebidaSelecc} ${endulSelecc} alguna de nuestras opciones extra?\n 1. Leche de almendras\n 2. Leche de coco\n 3. Jugo de naranja\n 4. Jugo de arándanos\n 5. No deseo nada extra`);
+    extra = prompt(`¿Desea añadir a su ${bebidaSelecc} ${endulSelecc} alguna de nuestras opciones extra? Seleccione el número.\n 1. Leche de almendras\n 2. Leche de coco\n 3. Jugo de naranja\n 4. Jugo de arándanos\n 5. No deseo nada extra`);
     extraSelecc = opcionesExtra[extra];
 
     if (extra <= '4') {
@@ -88,7 +88,7 @@ const pedirComida = () => {
   };
 
   do {
-    comida = prompt(`Selecciona con qué quieres acompañar tu ${bebidaFinal}: \n1. Medialuna\n2. Cookie\n3. Tostada con palta y tomate\n4. Brownie`)
+    comida = prompt(`Selecciona con qué quieres acompañar tu ${bebidaFinal}(selecciona solo el número): \n1. Medialuna\n2. Cookie\n3. Tostada con palta y tomate\n4. Brownie`)
     comidaSelecc = opcionesComida[comida]
 
     cantidad = parseInt(prompt('¿Cuántos quieres encargar?'))
